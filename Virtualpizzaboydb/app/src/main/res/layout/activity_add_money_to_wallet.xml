@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".add_money_to_wallet"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/enter_pin_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/belgrano"
+        android:text="Enter your pin"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:textColor="@color/brown"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_pin_add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:maxLength="4"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:hint="Enter Pin"
+            android:inputType="numberPassword" />
+
+        <Button
+            android:id="@+id/check_pin_add_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/brown"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:text="check"
+            android:textColor="@color/background" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_amount_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/belgrano"
+        android:text="Enter Amout to be Added"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/brown"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/add_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="6"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:hint="Enter Amount" />
+
+    <Button
+        android:id="@+id/add_money_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/brown"
+        android:text="Add"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/background" />
+
+</LinearLayout>

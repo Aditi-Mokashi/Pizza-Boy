@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".CreateWallet">
+
+    <TextView
+        android:id="@+id/walletTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/brown"
+        android:fontFamily="@font/bree_serif"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Create Wallet"
+        android:textColor="@color/background"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/enterPinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/belgrano"
+        android:text="Enter a pin of 4 digits\n\n(It cannot be changed later)"
+        android:textColor="@color/brown"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/enterPin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:ems="4"
+        android:fontFamily="@font/belgrano"
+        android:hint="Enter pin"
+        android:inputType="textPassword|number"
+        android:maxLength="4"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/reEnterPin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="38dp"
+        android:ems="4"
+        android:fontFamily="@font/belgrano"
+        android:hint="Re-enter pin"
+        android:inputType="textPassword|number"
+        android:maxLength="4"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/proceed_pin_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/belgrano"
+        android:text="set pin"
+        android:textColor="@color/background"
+        android:textSize="18sp" />
+
+</LinearLayout>

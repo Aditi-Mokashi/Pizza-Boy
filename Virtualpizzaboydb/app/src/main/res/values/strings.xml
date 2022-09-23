@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Virtual Pizza Boy</string>
+    <!-- Use only these strings -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="order_placed">Your order is placed!</string>
+    <string name="get_order">Please go to the counter once the number is announced.</string>
+    <string name="token_number">123</string>
+    <string name="title_activity_payment_gateway">payment_gateway</string>
+    <string name="resend_button_text">Resend</string>
+    <string name="otp_text_field">Enter OTP</string>
+    <string name="proceed_otp_button">Proceed</string>
+    <string name="your_order_text">Your Order</string>
+    <string name="proceed_cart_button">Proceed</string>
+    <!-- Till here -->
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_menu_list">MenuList</string>
+    <string name="tab_text_1">Pizzas</string>
+    <string name="tab_text_2">Beverages</string>
+    <string name="tab_text_3">Sides</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

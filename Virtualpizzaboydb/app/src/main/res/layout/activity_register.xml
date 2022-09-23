@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".register">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="179dp"
+        android:layout_height="203dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@drawable/logo_splash_screen" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_phone_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Phone"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/register_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_email_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_email"
+        android:layout_alignStart="@id/register_email"
+        android:layout_alignLeft="@id/register_email"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/custom_pass_icon"
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/register_confirm_password"
+        android:inputType="textPassword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_password"
+        android:layout_alignStart="@id/register_password"
+        android:layout_alignLeft="@id/register_password"
+        android:layout_marginTop="28dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/custom_pass_icon"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/rspinner"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/register_confirm_password"
+        android:layout_alignStart="@id/register_confirm_password"
+        android:layout_alignLeft="@id/register_confirm_password"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:layout_below="@id/rspinner"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:layout_marginTop="28dp"/>
+
+    <TextView
+        android:id="@+id/loginHere"
+        android:text="Alredy have an account? Login here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_alignStart="@id/register"
+        android:layout_alignLeft="@id/register"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/brown" />
+
+</RelativeLayout>

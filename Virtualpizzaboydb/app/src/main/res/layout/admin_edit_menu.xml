@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AdminEditMenu">
+
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="181dp"
+        android:layout_height="206dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/upload_image" />
+
+    <EditText
+        android:id="@+id/nameofproduct"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Name of product"
+        android:inputType="textPersonName"
+       android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgv"
+        />
+
+    <EditText
+        android:id="@+id/priceofproduct"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Price of product"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameofproduct"
+        android:layout_marginTop="28dp"/>
+
+
+    <EditText
+        android:id="@+id/descriptionofproduct"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Description of product"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/priceofproduct"
+        android:layout_marginTop="28dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/descriptionofproduct"
+        android:id="@+id/category"
+        android:layout_marginTop="28dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="Add to category"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="466dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/addinvegpizzas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="veg pizzas"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="501dp" />
+
+                <RadioButton
+                    android:id="@+id/addinnonvegpizzas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="non-veg pizzas"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="616dp" />
+
+                <RadioButton
+                    android:id="@+id/addinsides"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sides"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="584dp" />
+
+            <RadioButton
+                android:id="@+id/addinbeverages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="beverages"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="541dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/uploadtodb"
+        android:layout_width="256dp"
+        android:layout_marginTop="28dp"
+        android:layout_height="47dp"
+        android:background="@drawable/custom_button"
+        android:text="Upload"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/category" />
+</RelativeLayout>

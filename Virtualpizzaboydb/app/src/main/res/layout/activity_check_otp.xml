@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".check_otp">
+
+
+
+    <TextView
+        android:id="@+id/otpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/belgrano"
+        android:text="Enter OTP :"
+        android:textColor="@color/brown"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/root_otp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpTextView"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/otp_edit_box1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/otp_edit_box2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otp_edit_box3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <EditText
+            android:id="@+id/otp_edit_box4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:maxLength="1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/root_otp_layout"
+        android:layout_centerHorizontal="true" >
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/success"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/success"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/verify_otp"
+            android:layout_width="150dp"
+            android:layout_below="@+id/success"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Verify"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/resend_otp_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/verify_otp"
+            android:layout_marginTop="40dp"
+            android:text="resend otp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:id="@+id/home" android:title="Home" android:icon="@drawable/ic_baseline_home_24" />
+        <item android:id="@+id/menu" android:title="Menu" android:icon="@drawable/ic_action_menu" />
+        <item android:id="@+id/special" android:title="Today's special" android:icon="@drawable/ic_action_special"/>
+        <item android:id="@+id/cart" android:title="Cart" android:icon="@drawable/ic_action_cart"/>
+    </group>
+
+    <group  android:id="@+id/group5">
+        <item android:id="@+id/wallet" android:title="My Wallet" android:icon="@drawable/ic_baseline_account_balance_wallet_24" />
+    </group>
+
+    <group  android:id="@+id/group2">
+        <item android:id="@+id/setting" android:title="Setting" android:icon="@drawable/ic_action_setting"/>
+    </group>
+    <group  android:id="@+id/group3">
+        <item android:id="@+id/logout" android:title="Logout" android:icon="@drawable/ic_action_logout" />
+    </group>
+    <group  android:id="@+id/group4">
+        <item android:id="@+id/contact" android:title="Contact Us" android:icon="@drawable/ic_action_contact" />
+    </group>
+</menu>

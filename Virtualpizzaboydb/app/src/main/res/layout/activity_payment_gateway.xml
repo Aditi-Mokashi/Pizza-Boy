@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/netBankingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/brown"
+        android:fontFamily="@font/bree_serif"
+        android:padding="10dp"
+        android:text="Net Banking"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/cardTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Type :"
+        android:textColor="@color/black"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/spinner_card_type"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_input"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/accountHolderName"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="Account Holder Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/accountNumber"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        android:background="@drawable/custom_input"
+        android:drawableLeft="@drawable/ic_keypad"
+        android:ems="10"
+        android:hint="Account Number"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/expirationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry date :"
+            android:textColor="@color/black"
+            android:layout_marginTop="0dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cvvTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV :"
+            android:textColor="@color/black"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="130dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_month"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/custom_input"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spinner_year"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/custom_input"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/custom_input"
+            android:ems="5"
+            android:hint="cvv"
+            android:inputType="textPassword|number"
+            android:maxLength="3"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/proceed_payment_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Proceed"
+        android:textColor="@color/white" />
+
+</LinearLayout>

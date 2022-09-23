@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "88909904057",
+    "firebase_url": "https://virtualpizzaboydb-default-rtdb.firebaseio.com",
+    "project_id": "virtualpizzaboydb",
+    "storage_bucket": "virtualpizzaboydb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88909904057:android:6cb18be904477e86d7c368",
+        "android_client_info": {
+          "package_name": "com.example.virtualpizzaboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88909904057-7j0lvvdam047qkuo5s032v630834f15r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbYMzLJNTZqvyLaJqENIKsBCfwfxi6DZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88909904057-7j0lvvdam047qkuo5s032v630834f15r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

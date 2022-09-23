@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context=".WelcomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/explore_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:text="Explore menu"
+            android:textSize="20sp"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold" />
+
+        <GridView
+            android:id="@+id/explore_menu_list"
+            android:layout_below="@+id/explore_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:horizontalSpacing="4sp"
+            android:numColumns="2"
+            android:verticalSpacing="4sp" />
+
+        <TextView
+            android:id="@+id/today_title"
+            android:layout_below="@+id/explore_menu_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="5sp"
+            android:textSize="20sp"
+            android:text="Today's Special"
+            android:textColor="@color/teal_700"
+            android:textStyle="bold" />
+
+        <GridView
+            android:id="@+id/today_special_list"
+            android:layout_below="@+id/today_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:gravity="center"
+            android:horizontalSpacing="4sp"
+            android:numColumns="2"
+            android:verticalSpacing="4sp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

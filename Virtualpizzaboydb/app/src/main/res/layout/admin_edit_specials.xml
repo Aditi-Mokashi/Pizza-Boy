@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AdminEditMenu">
+
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="181dp"
+        android:layout_height="206dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/upload_image" />
+
+    <EditText
+        android:id="@+id/nameofproduct"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Name of product"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgv"
+        />
+
+    <EditText
+        android:id="@+id/priceofproduct"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Price of product"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameofproduct"
+        android:layout_marginTop="28dp"/>
+
+
+    <EditText
+        android:id="@+id/descriptionofproduct"
+        android:layout_width="350dp"
+        android:padding="10dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="Description of product"
+        android:inputType="textPersonName"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/priceofproduct"
+        android:layout_marginTop="28dp"/>
+
+
+    <Button
+        android:id="@+id/uploadtodb"
+        android:layout_width="256dp"
+        android:layout_marginTop="28dp"
+        android:layout_height="47dp"
+        android:background="@drawable/custom_button"
+        android:text="Upload"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/descriptionofproduct" />
+</RelativeLayout>
